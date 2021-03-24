@@ -7,13 +7,35 @@
 			transition: background-color 5s;
 		}
   img {max-width: 60%; height: auto;}
-</style>
+html {
+      cursor: none;
+      overflow: hidden;
+    }
+    .pointer {
+      position: absolute;
+      height: 1000px; top:1000px;
+      width: 500px; left:50%;
+      pointer-events: none;
+    }
 
+    .pointer img {
+      width: 50px;
+    }	
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+      $(document).mousemove(function (e) {
+      $(".pointer").css({ left: e.pageX, top: e.pageY });
+    });
+    </script>
 <title>Elis Knight's Music</title>
   <link rel="icon" href="img/gkcg3brahb011.ico">
 </head>
 <body>
-  
+
+<div class="pointer"> <img src="img/smiley.gif" class="gif" alt=""> </div>	
+	
 <script type="text/javascript">
 		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
