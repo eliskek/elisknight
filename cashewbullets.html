@@ -3,12 +3,34 @@
 <head>
 <style>
   img {max-width: 60%; height: auto;}
-</style>
+  html {
+      cursor: none;
+      overflow: hidden;
+    }
+    .pointer {
+      position: absolute;
+      height: 480px; top:100px;
+      width: 480px; left:50%;
+      pointer-events: none;
+    }
 
+    .pointer img {
+      width: 140px;
+    }
+</style>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+      $(document).mousemove(function (e) {
+      $(".pointer").css({ left: e.pageX, top: e.pageY });
+    });
+    </script>
 <title>Cashew Bullets</title>
   <link rel="icon" href="img/gkcg3brahb011.ico">
 </head>
 <body style = "background: url(https://elisknight.co.uk/img/bg1.png)">
+  
+  <div class="pointer"> <img src="https://thumbs.gfycat.com/AmusingFriendlyBarasingha-size_restricted.gif" class="gif" alt=""> </div>
   
 <p style="text-align:left;"><a href="https://elisknight.co.uk/">
   <img src="img/back.gif" width="8%" height="8%" alt="back"></a>
