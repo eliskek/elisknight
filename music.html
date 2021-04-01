@@ -1,12 +1,14 @@
-  
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<style type="text/css">
+		body {
+			background-color: white;
+			transition: background-color 5s;
+		}
   img {max-width: 60%; height: auto;}
-}
-  img {max-width: 60%; height: auto;}
-  html {
+</style>
+html {
       cursor: none;
       overflow: hidden;
     }
@@ -19,7 +21,7 @@
 
     .pointer img {
       width: 50px;
-    }
+    }	
 </style>
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -28,18 +30,18 @@
       $(".pointer").css({ left: e.pageX, top: e.pageY });
     });
     </script>
-<title>Elis Knight</title>
+<title>Elis Knight's Music</title>
   <link rel="icon" href="img/gkcg3brahb011.ico">
 </head>
-<body style = "background: url(https://elisknight.co.uk/img/bg1.png)">
+<body>
+
 
 <div class="pointer"> <img src="img/smiley.gif" class="gif" alt=""> </div>	
-	
+
 <script type="text/javascript">
 		var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 		var i = 1;
-
 		window.setInterval(function(){
 			document.body.style.backgroundColor = colors[i];
 			i++;
@@ -52,11 +54,10 @@
 <p style="text-align:left;"><a href="https://elisknight.co.uk/">
   <img src="img/back.gif"  width="8%" height="8%" alt="back"></a>
 </p> 
-
 <p style="text-align:center;">
   <img src="img/music.gif" width="30%" height="30%">
 </p> 
-  
+	
 <p style="text-align:center;"><a href="https://slugwermo.bandcamp.com/">
   <img src="img/slugworm.png" width="40%" height="40%" alt="slugworm"></a>
 </p>  
@@ -68,8 +69,5 @@
 <p style="text-align:center;"><a href="https://soundcloud.com/slugwermo">
   <img src="img/ekjo.png" width="30%" height="30%" alt="elis knight jazz orchestra"></a>
 </p>
-	
-<p style="text-align:center;">More music and artists at <a href="striderrecords.html">Strider Records</a>
-
 </body>
 </html>
