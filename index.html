@@ -3,6 +3,22 @@
 <head>
 <style>
   img {max-width: 60%; height: auto;}
+  * {
+  box-sizing: border-box;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 500px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 <title>Elis Knight</title>
   <link rel="icon" href="img/gkcg3brahb011.ico">
@@ -13,25 +29,31 @@
   <img src="img/elisknight.png" width="90%" height="90%">
 </p>
   
-<p style="text-align:center;"><a href="music.html">
-  <img src="img/music.gif" width="30%" height="30%" alt="music"></a>
-</p>   
-  
-<p style="text-align:center;"><a href="cashewbullets.html">
-  <img src="img/cashbulls.gif" width="30%" height="30%" alt="cashew bullets"></a>
-</p> 
-  
-<br>
-  
-<p style="text-align:center;"><a href="fig.html">
-  <img src="img/figlogo.png" width="30%" height="30%" alt="famous impressions guy"></a>
-</p>
-  
-<br>
-  
-<p style="text-align:center;"><a href="sciencebros.html">
-  <img src="img/sciencebroslogo.png" width="30%" height="30%" alt="science bros"></a>
-</p>
+<div class="row">
+  <div class="column">
+    <p style="text-align:center;">
+  	<img src="music.gif" width="70%" height="70%">
+    </p> 
+  </div>
+  <div class="column">
+    <p style="text-align:center;">
+  	<img src="cashbulls.gif" width="70%" height="70%">
+    </p> 
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <p style="text-align:center;">
+  	<img src="figlogo.png" width="70%" height="70%">
+    </p> 
+  </div>
+  <div class="column">
+    <p style="text-align:center;">
+  	<img src="sciencebroslogo.png" width="70%" height="70%">
+    </p> 
+  </div>
+</div>
   
 </body>
 </html>
