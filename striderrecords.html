@@ -1,44 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
+  html, body {
+  height: 100%;
+}
+
+
+body {
+  background-color: black;
+}
+  img {max-width: 100%; height: 100%;}
+ * {
   box-sizing: border-box;
 }
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 500px;
+  
+p {
+	font-size:50px;
+	line-height: 50px;
 }
 
-/* Clear floats after the columns */
+.column50 {
+  float: left;
+  width: 47%;
+  height: 80%;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  cursor:pointer;
+}
+
+.column50:hover {
+  float: left;
+  width: 47%;
+  height: 100%;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  cursor:pointer;
+}
+
+.column100 {
+  float: left;
+  width: 95%;
+  height: 100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  border: 2px solid white;
+  background-color: white;
+  color: black;
+}
+
+.column100:hover {
+  float: left;
+  width: 95%;
+  height: 100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+}
+
+.column33 {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+  padding-top:10px;
+  padding-bottom:10px;
+  border: 2px solid black;
+}
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 </style>
+
+<title>Elis Knight</title>
+  <link rel="icon" href="img/gkcg3brahb011.ico">
 </head>
 <body>
-
+  
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>Column 1</h2>
-    <p style="text-align:center;">
-  	<img src="https://elisknight.co.uk/img/music.gif" width="30%" height="30%">
-    </p> 
+  <div class="column100" style="margin-top:0.5%; margin-left:2.5%; margin-right:2%;">
+    <p style="text-align:center;"><b>STRIDER RECORDS</b></p>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>Column 2</h2>
-    <p style="text-align:center;">
-  	<img src="https://elisknight.co.uk/img/music.gif" width="30%" height="30%">
-    </p> 
-  </div>
-</div>
 
+  <div class="column50" style="margin-top:1%; margin-left:2.5%;">
+    <p style="text-align:center;">Slugworm</p>
+  </div>
+  <div class="column50" style="margin-top:1%; margin-left:1%;">
+    <p style="text-align:center;">Strider</p>
+  </div>
+
+  <div class="column50" style="margin-top:1%; margin-left:2.5%;">
+    <p style="text-align:center;">Lankenstein</p>
+  </div>
+  <div class="column50" style="margin-top:1%; margin-left:1%;">
+    <p style="text-align:center;">Kummy Jones</p>
+  </div>
+
+  <div class="column50" style="margin-top:1%; margin-left:2.5%;">
+    <p style="text-align:center;">Pseudonym Jones</p>
+  </div>
+  <div class="column50" style="margin-top:1%; margin-left:1%;">
+    <p style="text-align:center;">Teenage Racists</p>
+  </div>
+
+  <div class="column50" style="margin-top:1%; margin-left:2.5%;">
+    <p style="text-align:center;">Cooper From Da Future</p>
+  </div>
+  <div class="column50" style="margin-top:1%; margin-left:1%;">
+    <p style="text-align:center;">Peasant "Bystander" Donlan</p>
+  </div>
+
+  <div class="column50" style="margin-top:1%; margin-left:2.5%;">
+    <p style="text-align:center;">Michael May</p>
+  </div>
+  <div class="column50" style="margin-top:1%; margin-left:1%;">
+    <p style="text-align:center;">Beevan</p>
+  </div>
+
+  <div class="column50" style="margin-top:1%; margin-left:2.5%;">
+    <p style="text-align:center;">Kribyu</p>
+  </div>
+  <div class="column50" style="margin-top:1%; margin-left:1%;">
+    <p style="text-align:center;">Lil Chubbs</p>
+  </div>
+
+</div>
 </body>
 </html>
