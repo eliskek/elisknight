@@ -10,14 +10,15 @@
 body {
   background-color: black;
 }
-  img {max-width: 100%; height: 100%;}
+  img {max-width: 100%;
+	   float: left;}
  * {
   box-sizing: border-box;
 }
   
 p {
-	font-size:35px;
-	line-height: 35px;
+	font-size:2vh;
+	line-height: 3vh;
 }
 
 a {
@@ -25,55 +26,90 @@ a {
     text-decoration: none;
 }
 
-.column50 {
+.square-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+}
+.square-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.ten {
   float: left;
-  width: 37%;
-  height: 80%;
-  border: 2px solid white;
-  background-color: black;
+  width: 9%;
+    margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
   color: white;
-  cursor:pointer;
+  border: 5px solid white;
 }
 
-.column50:hover {
+.back {
   float: left;
-  width: 37%;
-  height: 100%;
-  border: 2px solid black;
-  background-color: white;
-  color: black;
-  cursor:pointer;
-}
-
-.column100 {
-  float: left;
-  width: 75%;
-  height: 100%;
-  padding-top:10px;
-  padding-bottom:10px;
-  border: 2px solid white;
-  background-color: white;
-  color: black;
-}
-
-.column100:hover {
-  float: left;
-  width: 75%;
-  height: 100%;
-  padding-top:10px;
-  padding-bottom:10px;
-  border: 2px solid white;
-  background-color: black;
+  width: 9%;
+    margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
   color: white;
+  background-color: black;
+  border: 5px solid white;
 }
 
-.column33 {
+.back:hover {
   float: left;
-  width: 33.33%;
-  height: 100%;
-  padding-top:10px;
-  padding-bottom:10px;
-  border: 2px solid black;
+  width: 9%;
+    margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.title {
+  float: left;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.box { /* adjustable container for anything inside page */
+  float: left;
+  color: white;
+  border: 5px solid white;
+}
+
+.page { /* this is just the div to contain everything */
+  float: left;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.segment {
+  float: left;
+  width: 100%;
+  color: white
+}
+
+.segment:hover { /* adjustable container for anything inside page */
+  float: left;
+  color: black;
+  background-color: white;
+  border: 5px solid white;
 }
 
 .row:after {
@@ -83,65 +119,260 @@ a {
 }
 </style>
 
-<title>Elis Knight</title>
+<title>New Website Look</title>
   <link rel="icon" href="img/gkcg3brahb011.ico">
 </head>
 <body>
-  
-<div class="row">
-  <div class="column100" style="margin-top:0.5%; margin-left:12.5%; margin-right:2%;">
-    <p style="text-align:center;"><b>STRIDER RECORDS</b></p>
-  </div>
 
-  <div class="column50" style="margin-top:1%; margin-left:12.5%;">
-	<a href="https://slugwermo.bandcamp.com/">
-	  <p style="text-align:center;">Slugworm</p>
-	</a>
-  </div>
-  <div class="column50" style="margin-top:1%; margin-left:1%;">
-    <a href="https://soundcloud.com/striderstrider">
-	  <p style="text-align:center;">Strider</p>
-	</a>
-  </div>
+<div class="square-container">
+  <div class="square-content">
+    <div class="row">
 
-  <div class="column50" style="margin-top:1%; margin-left:12.5%;">
-    <p style="text-align:center;">
-	  <a href="https://soundcloud.com/lankenstein">Lankenstein</a></p>
-  </div>
-  <div class="column50" style="margin-top:1%; margin-left:1%;">
-    <p style="text-align:center;">
-	  <a href="https://soundcloud.com/kjmole">Kummy Jones</p>
-  </div>
+      <div class="back" style="height: 10vh"> <!-- back button -->
+        <p style="text-align:center;">Back</p>
+      </div>
 
-  <div class="column50" style="margin-top:1%; margin-left:12.5%;">
-    <p style="text-align:center;">
-	  <a href="https://soundcloud.com/slugwermo">Pseudonym Jones</a></p>
-  </div>
-  <div class="column50" style="margin-top:1%; margin-left:1%;">
-    <p style="text-align:center;">Teenage Racists</p>
-  </div>
+      <div class="title" style="height: 10vh; width: 79%"> <!-- page header -->
+	    <p style="text-align:center;"><b>Strider Records Archive</b></p>
+	  </div>
 
-  <div class="column50" style="margin-top:1%; margin-left:12.5%;">
-    <p style="text-align:center;">Cooper From Da Future</p>
-  </div>
-  <div class="column50" style="margin-top:1%; margin-left:1%;">
-    <p style="text-align:center;">Peasant "Bystander" Donlan</p>
-  </div>
+	  <div class="ten" style="height: 10vh">
+        <p style="text-align:center;">Back</p>
+      </div>
 
-  <div class="column50" style="margin-top:1%; margin-left:12.5%;">
-    <p style="text-align:center;">Michael May</p>
-  </div>
-  <div class="column50" style="margin-top:1%; margin-left:1%;">
-    <p style="text-align:center;">Beevan</p>
-  </div>
+	  <div class="ten" style="height: 100%; padding-left: 2vh; padding-right: 2vh"> <!-- sidebar -->
+        <p>Home<br><br>Music<br><br>Films<br><br>Famous Impressions Guy<br>
+		   <br>ScienceBros<br><br>Cashew Bullets<br><br>can<br><br>go<br><br>on
+		</p>
+      </div>
 
-  <div class="column50" style="margin-top:1%; margin-left:12.5%;">
-    <p style="text-align:center;">Kribyu</p>
-  </div>
-  <div class="column50" style="margin-top:1%; margin-left:1%;">
-    <p style="text-align:center;">Lil Chubbs</p>
-  </div>
+	  <div class="page" style="width: 79%"> <!-- actual page content -->
+	    
+	  <!-- row 1 -->
 
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://soundcloud.com/digiaether/sets/sounds-from-the-digital-aether-vol-1'">
+		    <img src="https://i1.sndcdn.com/artworks-yTZenrpGZsTMmiJ5-B3IyDQ-t500x500.jpg">
+			<p style="text-align:center;">Digital Aether<br>Sounds From The<br>(released 16 Apr 2021)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://soundcloud.com/kjmole/sets/chubbworld-part-2'">
+		    <img src="https://i1.sndcdn.com/artworks-4UwygVPARkF35Doc-jBXmxg-t500x500.jpg">
+			<p style="text-align:center;">Lil Chubbs<br>CHUBBWORLD PT 2<br>(released 16 Apr 2021)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://soundcloud.com/slugwermo/sets/fools-day'">
+		    <img src="https://i1.sndcdn.com/artworks-AxbUb6cvpyfyZQcr-y3vuqQ-t500x500.jpg">
+			<p style="text-align:center;">Pseudonym Jones<br>FOOL'S DAY<br>(released 1 Apr 2021)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://soundcloud.com/striderstrider/sets/more-things'">
+		    <img src="https://i1.sndcdn.com/artworks-dRxEdB7JOWjVfDHf-yLts0g-t500x500.jpg">
+			<p style="text-align:center;">Strider<br>More Things<br>(released 1 Mar 2021)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/striderstrider/sets/things'">
+		    <img src="https://i1.sndcdn.com/artworks-EoI8SS0zaWRdFWcf-jT1n8Q-t500x500.jpg">
+			<p style="text-align:center;">Strider<br>Things<br>(released 1 Mar 2021)</p>
+		  </div>
+	    </div>
+
+	  <!-- row 2 -->
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://soundcloud.com/slugwermo/sets/whats-on-tv'">
+		    <img src="https://i1.sndcdn.com/artworks-xL94gamBHQKBpa2Z-pdx4ug-t500x500.jpg">
+			<p style="text-align:center;">Pseudonym Jones<br>What's On TV?<br>(released 20 Feb 2021)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/slugwermo/sets/slugworld'">
+		    <img src="https://i1.sndcdn.com/artworks-wM49fWK4rQfyBiZj-XsAVzQ-t500x500.jpg">
+			<p style="text-align:center;">Slugworm<br>Slugworld<br>(released 5 Jan 2021)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/lankenstein/sets/lankenstein'">
+		    <img src="https://i1.sndcdn.com/artworks-1maS2CytqbWZp2bi-nhr9dg-t500x500.jpg">
+			<p style="text-align:center;">LANKENSTEIN<br>LANKENSTEIN<br>(released 25 Dec 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/hgufoiahuio/sets/zone-ep'">
+		    <img src="https://i1.sndcdn.com/artworks-giApo4sxUj6GN3Nb-xfw5Dw-t500x500.jpg">
+			<p style="text-align:center;">Beevan<br>Zone EP<br>(released 29 Nov 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/striderstrider/sets/things-from-240219-to-071120'">
+		    <img src="https://i1.sndcdn.com/artworks-ESN41LJYDFShhhfT-4UxveQ-t500x500.jpg">
+			<p style="text-align:center;">Strider<br>24/02/19 to 07/11/20<br>(released 7 Nov 2020)</p>
+		  </div>
+	    </div>
+
+	  <!-- row 3 -->
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://soundcloud.com/kjmole/sets/chubbworld-part-1'">
+		    <img src="https://i1.sndcdn.com/artworks-3KmmlaIZL5r5nizB-PKNZ9Q-t500x500.jpg">
+			<p style="text-align:center;">Lil Chubbs<br>CHUBBWOLRD PT 1<br>(released 4 Oct 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh" 
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape7'">
+		    <img src="https://f4.bcbits.com/img/a3935856604_10.jpg">
+			<p style="text-align:center;">Slugworm<br>BEATTAPE7<br>(released 10 Jun 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/lankenstein/sets/creations-2'">
+		    <img src="https://i1.sndcdn.com/artworks-zyio99RukSr1td0E-nvO3wg-t500x500.jpg">
+			<p style="text-align:center;">LANKENSTEIN<br>Creations 2<br>(released 10 Aug 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/striderstrider/sets/st3'">
+		    <img src="https://i1.sndcdn.com/artworks-SSx931vYYQnzISlr-EOXpXA-t500x500.jpg">
+			<p style="text-align:center;">Strider<br>ST3<br>(released 9 Aug 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape6'">
+		    <img src="https://f4.bcbits.com/img/a3452864088_10.jpg">
+			<p style="text-align:center;">Slugworm<br>BEATTAPE6<br>(released 1 August 2020)</p>
+		  </div>
+	    </div>
+
+	  <!-- row 4 -->
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape5'">
+		    <img src="https://f4.bcbits.com/img/a3111783867_10.jpg">
+			<p style="text-align:center;">Slugworm<br>BEATTAPE5<br>(released 1 July 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/lankenstein/sets/creations-1'">
+		    <img src="https://i1.sndcdn.com/avatars-B38jY2WzfYMowPJ7-zNydCw-t500x500.jpg">
+			<p style="text-align:center;">LANKENSTEIN<br>Creations 1<br>(released 10 Jun 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape4'">
+		    <img src="https://f4.bcbits.com/img/a2020689639_10.jpg">
+			<p style="text-align:center;">Slugworm<br>BEATTAPE4<br>(released 1 Jun 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/jake-hu-708366783/sets/2-yu-beat-tape-2'">
+		    <img src="https://i1.sndcdn.com/artworks-mz3yh7IwV2ageyQh-1jfR6A-t500x500.jpg">
+			<p style="text-align:center;">Kribyu<br>2 yu.<br>(released 6 May 2020)</p>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 19.2%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape3'">
+		    <img src="https://f4.bcbits.com/img/a3075007574_10.jpg">
+			<p style="text-align:center;">Slugworm<br>BEATTAPE3<br>(released 1 May 2020)</p>
+		  </div>
+	    </div>
+
+	  <!-- row 5 -->
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/striderstrider/sets/strider'">
+		    <img src="https://i1.sndcdn.com/artworks-mbsZrQLOZymMumhG-gNvddA-t500x500.jpg">
+			<p style="text-align:center;">Strider<br>strider<br>(released 12 Apr 2020)</p>
+		  </div>
+	    </div>
+
+        <div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape2'">
+		    <img src="https://f4.bcbits.com/img/a2573949292_10.jpg">
+		    <p style="text-align:center;">Slugworm<br>BEATTAPE2<br>(released 1 Apr 2020)</p>
+		  </div>
+	    </div>
+
+	    <div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/kjmole/sets/the-story-of-kj-the-instrumentals'">
+		    <img src="https://i1.sndcdn.com/artworks-e7AusOMkeG4kLtwc-JcZYag-t500x500.jpg">
+			<p style="text-align:center;">Kummy Jones<br>The Instrumentals<br>(released 28 Mar 2020)</p>
+		  </div>
+	    </div>
+
+	    <div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/kjmole/sets/the-story-of-kj'">
+		    <img src="https://i1.sndcdn.com/artworks-QggsyMc0qJHTw66z-5O7zPg-t500x500.jpg">
+			<p style="text-align:center;">Kummy Jones<br>The Story Of KJ<br>(released 8 Mar 2020)</p>
+		  </div>
+	    </div>
+
+	    <div class="box" style="width: 19.2%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://slugwermo.bandcamp.com/album/beattape1'">
+		    <img src="https://f4.bcbits.com/img/a1625563995_10.jpg">
+			<p style="text-align:center;">Slugworm<br>BEATTAPE1<br>(released 1 Mar 2020)</p>
+		  </div>
+	    </div>
+
+	  <!-- row 6 -->
+
+		<div class="box" style="width: 19.2%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh"
+		    onclick="location.href='https://soundcloud.com/striderstrider/sets/strider2004'">
+		    <img src="https://i1.sndcdn.com/artworks-000633048811-xantg4-t500x500.jpg">
+			<p style="text-align:center;">Strider<br>strider2004<br>(released 7 Nov 2019)</p>
+		  </div>
+	    </div>
+
+	  </div>
+
+    </div>
+  </div>
 </div>
+
 </body>
 </html>
