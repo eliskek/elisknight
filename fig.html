@@ -2,30 +2,125 @@
 <html>
 <head>
 <style>
-  img {max-width: 60%; height: auto;}
-    * {
+  html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #0a0a0a;
+}
+  img {max-width: 100%;
+	   float: left;}
+ * {
   box-sizing: border-box;
 }
   
-.column {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  height: 400px;
+p {
+	font-size:2vh;
+	line-height: 3vh;
 }
 
-.halfcolumn {
-  float: left;
-  width: 12.5%;
-  padding: 10px;
-  height: 400px;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-.large {
+.square-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+}
+.square-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.space {
   float: left;
-  width: 75%;
-  padding: 10px;
-  height: 700px;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+	
+.ten {
+  float: left;
+  width: 9%;
+    margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: white;
+  border: 5px solid white;
+}
+
+.back {
+  float: left;
+  width: 9%;
+    margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: white;
+  border: 5px solid white;
+}
+
+.back:hover {
+  float: left;
+  width: 9%;
+    margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.title {
+  float: left;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  color: black;
+  background-color: white;
+  border: 5px solid white;
+}
+
+.box { /* adjustable container for anything inside page */
+  float: left;
+  color: white;
+  border: 5px solid white;
+}
+
+.page { /* this is just the div to contain everything */
+  float: left;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.segment { /* adjustable container for anything inside page */
+  float: left;
+  width: 100%;
+  color: white
+}
+
+.segment:hover {
+  float: left;
+  color: black;
+  background-color: white;
+}
+
+.segment2 {
+  float: left;
+  width: 100%;
+  color: white
 }
 
 .row:after {
@@ -35,139 +130,159 @@
 }
 </style>
 
-<title>Famous Impressions Guy</title>
-  <link rel="icon" href="img/figlogo.ico">
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+
+<title>Strider Records</title>
+  <link rel="icon" href="img/gkcg3brahb011.ico">
 </head>
-<body style = "background: url(https://elisknight.co.uk/img/background.jpg); onclick='window.location.href="https://www.youtube.com/channel/UCw5KV3wk2lv2xaxI6A9gh5Q"'>
-  
-<p style="text-align:left;"><a href="https://elisknight.co.uk/">
-  <img src="img/back.gif" width="8%" height="8%" alt="back"></a>
-</p>
+<body>
 
-<p style="text-align:center;">
-  <img src="img/figlogo.png" width="30%" height="30%" alt="famous impressions guy" class="center">
-</p>
+<div class="square-container">
+  <div class="square-content">
+    <div class="row">
 
-<br>
-  
-<p style="text-align:center; color:white; font-family:'Times New Roman'; font-size:1vw;">
-  <u>Hi! My name is Fmaous Inpression Guy and I do impressions of famous people. like Robert Daniro and Donald Trump.</u>
-</p>
+      <div class="back" style="height: 10vh" onclick="goBack()'"> <!-- back button -->
+        <p style="text-align:center;">Back</p>
+      </div>
 
-<br>
-<br>
+      <div class="title" style="height: 10vh; width: 79%"> <!-- page header -->
+	    <p style="text-align:center;"><b>Famous Impressions Guy</b></p>
+	  </div>
 
-<div class="row">
-  <div class="halfcolumn">
-  </div>
-  <div class="large">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PNrv8chN8EI?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 	encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="halfcolumn">
+	  <div class="space" style="height: 10vh; width: 9%">
+      </div>
+
+	  <div class="ten" style="height: 100%; padding-left: 2vh; padding-right: 2vh"> <!-- sidebar -->
+		<p><a href="https://elisknight.co.uk/">Home</a><br><br>
+		   <a href="https://elisknight.co.uk/striderrecords.html">Music</a><br><br>
+		   <a href="https://elisknight.co.uk/films.html">Films</a><br><br>
+		   <u><b>Famous Impressions Guy</b></u><br><br>
+		   <a href="https://elisknight.co.uk/sciencebros.html">ScienceBros</a><br><br>
+		   <a href="https://elisknight.co.uk/cashewbullets.html">Cashew Bullets</a>
+		</p>
+      </div>
+
+	  <div class="page" style="width: 79%"> <!-- actual page content -->
+
+	    <div class="box" style="width: 100%; margin-right: 1%; margin-bottom: 1%">
+		  <div class="segment2" style="height: 100%; padding: 2vh">
+		    <p>Blah blah blah. In reverse chronological order</p>
+		  </div>
+		</div>
+	    
+	  <!-- row 1 -->
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/PNrv8chN8EI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/1a1PXx15li0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/qTVxcBHA0Uo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/z19snkI6gXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+	  <!-- row 2 -->
+	   
+	    <div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/LQsvH-xjh-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/b6mQ3PZObPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/_CvQjtMRQLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/dXedY05-CIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+	  <!-- row 3 -->
+	   
+	    <div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/roiD5PCmNxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/Ku79POxpu4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/D6gi5z3Ccy0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/Xedlyu5D82k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+	  <!-- row 4 -->
+	   
+	    <div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/o1dq7qSOcqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/CUeT2KWKZXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-right: 1%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/SzfQmdIcY3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+		<div class="box" style="width: 24.25%; margin-bottom: 1%">
+	      <div class="segment" style="height: 100%; padding: 2vh">
+		    <iframe width="100%" height="280" src="https://www.youtube.com/embed/ofRr5VQ-dnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  </div>
+	    </div>
+
+	  </div>
+
+    </div>
   </div>
 </div>
-
-<div class="row">
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/1a1PXx15li0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/qTVxcBHA0Uo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/z19snkI6gXw?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LQsvH-xjh-c?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" llowfullscreen></iframe> 
-  </div>
-</div>                                                                                      
-	
-<div class="row">
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b6mQ3PZObPg?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_CvQjtMRQLY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dXedY05-CIo?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/roiD5PCmNxk?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>                                                                                          
-	 
-<div class="row">
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ku79POxpu4Q?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/D6gi5z3Ccy0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Xedlyu5D82k?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-	clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/o1dq7qSOcqM?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-</div>                                                                                         
-	   
-<div class="row">
-  <div class="halfcolumn">
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CUeT2KWKZXY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SzfQmdIcY3w?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="column">
-     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ofRr5VQ-dnE?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
-  <div class="halfcolumn">
-  </div>
-</div>                                                                                         
-
-<br>
-<br>
-                                                                
-<p style="text-align:center;">
-  <img src="img/robdaniro.png" width="10%" height="10%" alt="robert daniro" class="center">
-</p>
-  
-<p style="text-align:center; color:white; font-family:'Times New Roman'; font-size:1vw;">
-  Robert Anthony De Niro Jr. was born in the Manhattan borough of New York City on August 17, 1943, the only child of painters Virginia Admiral and Robert De Niro Sr.
-  His father was of Irish and Italian descent, while his mother had Dutch, English, French, and German ancestry. His parents, who had met at the painting classes of Hans
-  Hofmann in Provincetown, Massachusetts, separated when he was two years old after his father announced that he was gay. He was raised by his mother in the Greenwich
-  Village and Little Italy neighborhoods of Manhattan. His father lived nearby, and remained close with De Niro during his childhood. Nicknamed "Bobby Milk" because of his
-  pale complexion, De Niro befriended many street kids in Little Italy, much to the disapproval of his father. Some, however, have remained his lifelong friends. His
-  mother was raised Presbyterian but became an atheist as an adult, while his father had been a lapsed Catholic since the age of 12. Against his parents' wishes, his
-  grandparents had De Niro secretly baptized into the Catholic Church while he was staying with them during his parents' divorce.
-
-  De Niro attended PS 41, a public elementary school in Manhattan, through the sixth grade. He began acting classes at the Dramatic Workshop and made his stage debut in school
-  at age 10, playing the Cowardly Lion in The Wizard of Oz. He later went to Elisabeth Irwin High School, the upper school of the Little Red School House, for the
-  seventh and eighth grades. He was then accepted into the High School of Music and Art for the ninth grade, but only attended for a short time before transferring to a
-  public junior high school: IS 71, Charles Evans Hughes Junior High School. De Niro attended high school at McBurney School and later, Rhodes Preparatory School.
-  He found performing as a way to relieve his shyness, and became fascinated by cinema, so he dropped out of high school at 16 to pursue acting. He later said, "When I was
-  around 18, I was looking at a TV show and I said, 'If these actors are making a living at it, and they're not really that good, I can't do any worse than them.'" He
-  studied acting at HB Studio and Lee Strasberg's Actors Studio. De Niro also studied with Stella Adler, of the Stella Adler Conservatory, where he was exposed to the
-  techniques of the Stanislavski system.
-</p>
 
 </body>
 </html>
