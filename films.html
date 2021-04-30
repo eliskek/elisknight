@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	body {
+		background-color: red;
+		font-family: 'Courier New', monospace;
+		font-size: 3vh;
+		height:100%;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	a {
+	    color: inherit;
+	    text-decoration: none;
+	}
+
+	.container {
+		width: 1500px;
+		height: 720px;
+		position: relative;
+		margin: 30px;
+	}
+
+	.box {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+
+	.bleft > span {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		margin: 30px;
+	}
+
+	.tright > span {
+		position: fixed;
+		top: 0;
+		right: 0;
+		margin: 30px;
+	}
+
+	.tleft > span {
+		position: fixed;
+		top: 0;
+		left: 0;
+		margin: 30px;
+	}
+
+</style>
+
+<title>Elis Knight</title>
+	<link rel="icon" href="img/gkcg3brahb011.ico">
+</head>
+
+<body>
+
+	<div class="tright">
+		<span style="z-index: 2; padding: 10px; font-size: 8vh">
+			<marquee behavior="alternate" direction="right" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()" style="background-color: white">
+				films
+			</marquee>
+		</span>
+	</div>
+
+	<div class="tleft">
+		<span style="z-index: 2; padding: 10px">
+			<marquee behavior="alternate" direction="right" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()" style="background-color: white">
+				<a href="https://elisknight.co.uk/">home</a>
+			</marquee>
+		</span>
+	</div>
+
+	<div class="container" style="z-index: 1; margin: 400px">
+		<a style="background-color: white">
+			(coming soon)
+		</a>
+	</div>
+
+	<div class="bleft">
+		<span style="z-index: 2; padding: 10px; width: 97.5%">
+			<marquee behavior="alternate" direction="right" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
+				<a href="https://elisknight.co.uk/striderrecords.html" style="background-color: white">
+					strider records
+				</a>
+			</marquee>
+			<marquee behavior="alternate" direction="right" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
+				<a href="https://elisknight.co.uk/striderradio.html" style="background-color: white">
+					strider radio
+				</a>
+			</marquee>
+			<marquee behavior="alternate" direction="right" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
+				<a href="https://elisknight.co.uk/fig.html" style="background-color: white">
+					famous impressions guy
+				</a>
+			</marquee>
+			<marquee behavior="alternate" direction="right" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+				<a href="https://elisknight.co.uk/sciencebros.html" style="background-color: white">
+					sciencebros
+				</a>
+			</marquee>
+		</span>
+	</div>
+
+</body>
+</html>
