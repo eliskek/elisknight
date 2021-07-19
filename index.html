@@ -3,48 +3,33 @@
 <head>
 <style>
 
-	body {
-		background-color: red;
-		font-family: 'Courier New', monospace;
-		font-size: 3vh;
-		height:100%;
-	}
+.mainRunner
+{
+  position: relative;
+}
 
-	* {
-		box-sizing: border-box;
-	}
+.img1
+{
+  position: relative;
+  z-index: 1;
+  width: 10%;
+}
 
-	a {
-	    color: inherit;
-	    text-decoration: none;
-	}
+.img2
+{
+  position: relative;
+  z-index: 2;
+  left: 6px;
+  width: 15%
+}
 
-	.container {
-		width: 1000px;
-		height: 800px;
-		position: relative;
-		margin: 30px;
-	}
-
-	.box {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-	}
-
-	.bleft > span {
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		margin: 30px;
-	}
-
-	.tright > span {
-		position: fixed;
-		top: 0;
-		right: 0;
-		margin: 30px;
-	}
+.img3
+{
+  position: relative;
+  z-index: 3;;
+  left: 12px;
+  width: 15%
+}
 
 </style>
 
@@ -54,51 +39,12 @@
 
 <body>
 
-	<div class="tright">
-		<span style="z-index: 3; padding: 10px; font-size: 8vh">
-			<marquee behavior="alternate" direction="right" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()" style="background-color: white">
-				elis knight
-			</marquee>
-		</span>
-	</div>
+<a href="films">CINEMA</a>
 
-	<div class="container">
-		<div class="box" style="z-index: 1; margin: 300px">
-			<iframe width="672" height="378" <iframe width="560" height="315" src="https://www.youtube.com/embed/P-B0uPg-a7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<div class="box" style="z-index: 2; width: 170px; height: 80px; margin-top: 280px; margin-left: 360px">
-			<a href="https://elisknight.co.uk/striderrecords.html"><!-- text here --></a>
-		</div>
-
-		<div class="bleft">
-			<span style="z-index: 3; padding: 10px; width: 97.5%">
-				<marquee behavior="alternate" direction="right" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
-					<a href="https://elisknight.co.uk/striderrecords.html" style="background-color: white">
-						strider records
-					</a>
-				</marquee>
-				<marquee behavior="alternate" direction="right" scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">
-					<a href="https://elisknight.co.uk/striderradio.html" style="background-color: white">
-						strider radio
-					</a>
-				</marquee>
-				<marquee behavior="alternate" direction="right" scrollamount="6" onmouseover="this.stop()" onmouseout="this.start()">
-					<a href="https://elisknight.co.uk/films.html" style="background-color: white">
-						films
-					</a>
-				</marquee>
-				<marquee behavior="alternate" direction="right" scrollamount="4" onmouseover="this.stop()" onmouseout="this.start()">
-					<a href="https://elisknight.co.uk/fig.html" style="background-color: white">
-						famous impressions guy
-					</a>
-				</marquee>
-				<marquee behavior="alternate" direction="right" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
-					<a href="https://elisknight.co.uk/sciencebros.html" style="background-color: white">
-						sciencebros
-					</a>
-				</marquee>
-			</span>
-		</div>
+	<div class="mainRunner">
+		<img class="img1" src="https://elisknight.co.uk/img/zappa/zappacoat.png">
+		<img class="img2" src="https://elisknight.co.uk/img/zappa/zappahair.jpg">
+		<img class="img3" src="https://elisknight.co.uk/img/zappa/zappatoilet.jpg">
 	</div>
 
 </body>
